@@ -11,8 +11,8 @@ DOWNLOAD_DIR="/downloads"
 # mkdir -p "${DOWNLOAD_DIR}"
 
 CHECK_INTERVAL="${CHECK_INTERVAL:-300}" # Default to 300 seconds (5 minutes) if not set
-BOT_TOKEN="${TELEGRAM_BOT_TOKEN}"
 
+BOT_TOKEN="${TELEGRAM_BOT_TOKEN}"
 CHAT_ID="${TELEGRAM_CHAT_ID}"
 
 # Function to send a message via Telegram

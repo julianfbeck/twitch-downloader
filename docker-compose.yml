@@ -7,6 +7,8 @@ services:
       - DOWNLOAD_DIR=/usr/src/app/downloads
       - MOUNTED_DRIVE=/mnt/mounted_drive
       - CHECK_INTERVAL=300
+      - BOT_TOKEN=yourtelegrambottoken
+      - CHAT_ID=yourchetid
 
     volumes:
       - /Volumes/Media/other/incomplete:/downloads
