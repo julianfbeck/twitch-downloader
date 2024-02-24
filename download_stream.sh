@@ -21,6 +21,8 @@ send_telegram_notification() {
     curl -s -X POST "https://api.telegram.org/bot$BOT_TOKEN/sendMessage" -d chat_id="$CHAT_ID" -d text="$message" -d parse_mode="Markdown"
 }
 
+send_telegram_notification "Twitch Downloader started"
+
 while true; do
     echo "$(date): Checking for ${USERNAME}'s stream..."
 

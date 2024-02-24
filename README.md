@@ -14,22 +14,10 @@ This project consists of a script for automatically downloading live streams fro
 
 ## Setup
 
-Configure the docker-compose.yml
-
-```yml
-version: '3.8'
-services:
-  twitch-downloader:
-    build: .
-    environment:
-      - TWITCH_USERNAME=melkey
-      - DOWNLOAD_DIR=/usr/src/app/downloads
-      - MOUNTED_DRIVE=/mnt/mounted_drive
-      - CHECK_INTERVAL=300
-
-    volumes:
-      - /Volumes/Media/other/incomplete:/downloads
-      - /Volumes/Media/other/twitch:/mnt/mounted_drive
-
-
-```
+## Configuration
+1. Copy the `.env.sample` file to a new file named `.env`.
+2. Open the `.env` file and replace the placeholder values with your actual data.
+   - `TWITCH_USERNAME`: The Twitch username of the streamer you're interested in.
+   - `BOT_TOKEN` and `CHAT_ID`: Your Telegram bot's token and the chat ID where you want to send notifications.
+   - Adjust other settings as necessary.
+3. Save the `.env` file. The application will use these environment variables when running.

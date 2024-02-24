@@ -1,15 +1,15 @@
 version: '3.8'
 services:
   twitch-downloader:
-    build: .
+    image: ghcr.io/julianfbeck/twitch-downloader:latest
     environment:
-      - TWITCH_USERNAME=melkey
-      - DOWNLOAD_DIR=/usr/src/app/downloads
-      - MOUNTED_DRIVE=/mnt/mounted_drive
-      - CHECK_INTERVAL=300
-      - BOT_TOKEN=yourtelegrambottoken
-      - CHAT_ID=yourchetid
-
+      - TWITCH_USERNAME
+      - DOWNLOAD_DIR
+      - MOUNTED_DRIVE
+      - CHECK_INTERVAL
+      - BOT_TOKEN
+      - CHAT_ID
     volumes:
       - /Volumes/Media/other/incomplete:/downloads
       - /Volumes/Media/other/twitch:/mnt/mounted_drive
+
