@@ -12,8 +12,8 @@ DOWNLOAD_DIR="/downloads"
 
 CHECK_INTERVAL="${CHECK_INTERVAL:-300}" # Default to 300 seconds (5 minutes) if not set
 
-BOT_TOKEN="${TELEGRAM_BOT_TOKEN}"
-CHAT_ID="${TELEGRAM_CHAT_ID}"
+BOT_TOKEN="${BOT_TOKEN}"
+CHAT_ID="${CHAT_ID}"
 
 # Function to send a message via Telegram
 send_telegram_notification() {

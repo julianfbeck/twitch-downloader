@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y ffmpeg && \
+    apt-get install -y ffmpeg curl&& \
     rm -rf /var/lib/apt/lists/*
 
 # Install yt-dlp
